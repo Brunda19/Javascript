@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/29A.css">
+</head>
+<body>
+    <form id="userForm"></form>
+        <fieldset>
+            <legend>Uers Details</legend>
+        <h2>Registration Form</h2>
+        <div ><input type="text" name="userName" id="userName"></div>
+        <div><input type="text" name="userName" id="userName"></div>
+        <div>
+            <h3>OM of others</h3>
+            <input type="radio" name="gender" id="male">
+            <label for="male">M</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="Female">F</label>
+        </div>
+        <div> 
+            <input type="checkbox" id="UG" value="UG">
+            <label for="UG">UG</label>
+            <input type="checkbox" id="PG" value="PG">
+            <label for="PG">PG</label>
+            <input type="checkbox" id="Others" value="Others">
+            <label for="Others">Others</label>
+        </div>
+        <div>
+        <select name="state" id="state" onchange="district_values()">
+            <option value="">Select State</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Goa">Goa</option>
+            <option value="UP">UP</option>
+            <option value="Bihar">Bihar</option>
+        </select>
+        </div>
+        <div>
+            <select name="District" id="District" onchange="city_values()">
+            <option value="">Select District</option>
+            </select>
+        </div>
+
+        <div>
+        <select name="city" id="city" onchange="village_values()" >
+            <option value=" ">Select City</option>
+        </select>
+        </div>
+        <div>
+            <select name="village" id="village">
+                <option value=" ">Select Village</option>    
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+        </fieldset>
+    </form>
+
+   <script src="../JS/29A.js" ></script>
+</body>
+</html>
